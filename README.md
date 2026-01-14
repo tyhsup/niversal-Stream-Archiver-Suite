@@ -24,14 +24,12 @@ Please refer to the [Customization Guide](#-customization-guide) before running 
   python unified_archiver_tool.py
 
 🔍 Customization Guide
-  To adapt this tool for your specific target website, update the following in unified_archiver_tool.py:
+To adapt this tool for your specific target website, update the following in unified_archiver_tool.py:
 1. Update Base URLs & Domain
    At the top of the script, modify the BASE_URL and API path variables. This is the most critical step for adapting to other sites:
 
-   # Change these values to your target platform
-
+# Change these values to your target platform
    BASE_URL = "https://your-target-site.com"
-
    API_PATH = f"{BASE_URL}/api/v2/path/to/content"
    
 2. Adjust JSON Structure
