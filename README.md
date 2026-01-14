@@ -21,9 +21,9 @@ Please refer to the [Customization Guide](#-customization-guide) before running 
 3. Setup FFmpeg: Ensure FFmpeg with CUDA support is in your system PATH.
 
 4. Run:
-
   python unified_archiver_tool.py
-  🔍 Customization Guide
+
+🔍 Customization Guide
   To adapt this tool for your specific target website, update the following in unified_archiver_tool.py:
 
   BASE_URL: The root domain of the platform.
