@@ -1,0 +1,6 @@
+Requests==2.32.5
+selenium==4.39.0
+selenium_stealth==1.0.6
+selenium_wire==5.1.0
+tqdm==4.67.1
+webdriver_manager==4.0.1
