@@ -28,11 +28,12 @@ To adapt this tool for your specific target website, update the following in uni
 1. Update Base URLs & Domain
    At the top of the script, modify the BASE_URL and API path variables. This is the most critical step for adapting to other sites:
 
-### Change these values to your target platform
-   1).BASE_URL = "https://your-target-site.com" 
-   2.)API_PATH = f"{BASE_URL}/api/v2/path/to/content"
+   ### Change these values to your target platform
+      1).BASE_URL = "https://your-target-site.com"
    
-2. Adjust JSON Structure
+      2.)API_PATH = f"{BASE_URL}/api/v2/path/to/content"
+   
+3. Adjust JSON Structure
    The function get_course_structure() parses the website's API. Since different sites use different JSON keys, you must update the mapping:
 
    Item ID: Change item.get('programContentId') to match the ID key of your platform.
@@ -40,7 +41,7 @@ To adapt this tool for your specific target website, update the following in uni
    Folder Name: Change d.get('contentSectionTitle') to the key representing categories/sections.
 
    File Name: Change d.get('title') to the key representing the lesson title.
-3. URL Interception Logic
+4. URL Interception Logic
    In capture_urls_via_listening(), the script filters network traffic for .m3u8 and .vtt. If your platform uses different file extensions or unique query parameters (like token= instead of Signature=), update the filter conditions there.
 
 🔍 How to Obtain Session Credentials
