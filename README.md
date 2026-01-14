@@ -12,15 +12,23 @@ A high-performance toolkit for archiving M3U8 video streams. It features an inte
 - **Smart Quality Detection**: Prioritizes 1080p/720p streams automatically.
 - **Compatibility**: Burned subtitles (.vtt) and standardized AAC 192kbps audio.
 
-## 🛠️ Quick Start
+## 🛠️ Quick Start & Prerequisites
 Please refer to the [Customization Guide](#-customization-guide) before running the tool on different platforms.
 
 1. **Install Dependencies**:
    pip install selenium-wire requests tqdm
    
-2. Setup FFmpeg: Ensure FFmpeg with CUDA support is in your system PATH.
+2. Download Edge WebDriver (Crucial):
 
-3. Run:
+Check your Edge browser version: Settings > About Microsoft Edge.
+
+Download the matching driver from Microsoft Edge Driver Official Site.
+
+Place the msedgedriver.exe file in the same folder as unified_archiver_tool.py.
+
+3. Setup FFmpeg: Ensure FFmpeg with CUDA support is installed and added to your system PATH.
+
+4. Run:
   python unified_archiver_tool.py
 
 🔍 Customization Guide
